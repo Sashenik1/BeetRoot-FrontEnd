@@ -1,0 +1,116 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+ul,
+ol {
+   list-style: none;
+   text-align: center;
+
+}
+
+.main {
+   width: 793px;
+   height: 507px;
+   margin-top: 100px;
+   border: 1px solid black;
+   text-align: center;
+   background: #3B3F45;
+   margin-inline: auto;
+}
+
+/*------------Header------------------*/
+header {
+   text-align: center;
+   color: #FF8984;
+   margin-bottom: 20px;
+   padding: 11px;
+
+}
+
+/*----------------Section---------------*/
+
+li {
+   width: 534px;
+   height: 45px;
+   margin-inline: auto;
+   display: inline-block;
+   background: #88839E;
+}
+
+li:nth-child(2n) {
+   background-color: #7A7593;
+}
+
+li:hover {
+   background-color: #625E77;
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
+}
+
+li:active {
+   background-color: #a53935;
+}
+
+input[type=checkbox]:checked+label {
+   background-color: hsl(283, 7%, 39%);
+   text-decoration-line: line-through;
+}
+
+label {
+   margin-left: 10px;
+   padding-right: 100px;
+   width: 495px;
+   height: 42px;
+   display: inline-flex;
+   color: aliceblue;
+   vertical-align: middle;
+   line-height: 42px;
+   gap: 10px
+}
+
+.cla::after {
+   content: " (for the next lessons about CSS)";
+   font-size: 0.678rem;
+}
+
+.clb::after {
+   content: "(for more CSS manipulations)";
+   font-size: 0.678rem;
+}
+
+.clc::after {
+   content: "(because they are awesome)";
+   font-size: 0.678rem;
+}
+
+.cld::after {
+   content: "(hm... they always dissapear)";
+   font-size: 0.678rem;
+}
+
+.clf::after {
+   content: "(for my friends)";
+   font-size: 0.678rem;
+}
+
+/*---------------------------Footer----------------*/
+
+footer {
+   width: 534px;
+   height: 45px;
+   margin-top: 35px;
+   background: #4A4F56;
+   margin-inline: auto;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 45px;
+}
+
+.foot {
+   display: inline-block;
+   color: #ff8984;
+   font-size: 1.125rem;
+}
