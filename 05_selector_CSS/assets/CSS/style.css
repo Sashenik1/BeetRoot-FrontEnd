@@ -45,6 +45,7 @@ li:nth-child(2n) {
 }
 
 li:hover {
+   transition: all .1s ease-in;
    background-color: #625E77;
    border-top: 2px solid white;
    border-bottom: 2px solid white;
@@ -52,11 +53,13 @@ li:hover {
 
 li:active {
    background-color: #a53935;
+   transition: all .1s ease-in;
 }
 
 input[type=checkbox]:checked+label {
    background-color: hsl(283, 7%, 39%);
    text-decoration-line: line-through;
+   transition: all .1s ease-in;
 }
 
 label {
