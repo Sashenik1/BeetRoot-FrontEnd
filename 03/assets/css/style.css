@@ -52,11 +52,12 @@ header .container {
    color: var(--gray-color);
    text-decoration: none;
    line-height: 30px;
-}
+     }
 
 .main-menu ul li a:hover {
    color: var(--text-color);
-}
+   text-shadow: 0 1px 0 #070707;
+   }
 
 /*--------------First block--------------*/
 .first-block {
@@ -73,6 +74,9 @@ h1 {
     
 }*/
 
+.about_me {
+   background-color: #F6F6F6;
+}
 .about_me .container h2 {
    font-size: 2.125rem;
    margin: 100px 0 45px;
@@ -151,6 +155,7 @@ h1 {
 .portfolio_container {
    text-align: center;
    margin-top: 179px;
+   background-color: #F6F6F6;
 }
 
 .portfolio_container h2 {
@@ -214,9 +219,12 @@ button {
    width: 500px;
    color: aqua;
    margin: auto;
-   gap: 50px;
+   gap: 100px;
    margin-bottom: 58px;
 
+}
+.bottom_icons ul{
+   gap:50 px;
 }
 
 .bottom_icons li {
@@ -224,6 +232,7 @@ button {
    margin-left: 25;
    margin-right: 25;
 }
+
 
 .like {
    font-size: 0.875rem;
