@@ -8,7 +8,6 @@ ul,
 ol {
    list-style: none;
    text-align: center;
-
 }
 
 .main {
@@ -38,6 +37,7 @@ li {
    margin-inline: auto;
    display: inline-block;
    background: #88839E;
+   transition: all .1s ease-in;
 }
 
 li:nth-child(2n) {
@@ -53,25 +53,23 @@ li:hover {
 
 li:active {
    background-color: #a53935;
-   transition: all .1s ease-in;
+   
 }
 
 input[type=checkbox]:checked+label {
    background-color: hsl(283, 7%, 39%);
    text-decoration-line: line-through;
-   transition: all .1s ease-in;
+   
 }
 
 label {
-   margin-left: 10px;
    padding-right: 100px;
-   width: 495px;
    height: 42px;
-   display: inline-flex;
-   color: aliceblue;
+   color: #FFF;;
    vertical-align: middle;
    line-height: 42px;
-   gap: 10px
+   /*gap: 10px;*/
+   transition: all .1s ease-in;
 }
 
 .cla::after {
