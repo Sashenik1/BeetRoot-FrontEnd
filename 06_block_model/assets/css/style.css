@@ -30,6 +30,10 @@ header .container {
     align-items: center;
 }
 
+.logo {
+    margin-top: 5px;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -93,7 +97,7 @@ section .container {
 
 h1 {
     font-size: 2.75rem;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .left_side p {
