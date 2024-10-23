@@ -6,11 +6,14 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+   
 }
 
 .container {
-    width: min(90%, 1200px);
+    width: min(90%, 1230px);
     margin-inline: auto;
+    
+   
 }
 
 ul,
@@ -21,7 +24,7 @@ ol {
 /*------------------------------------header------------------------------------------*/
 header {
     padding: 17px 0;
-    margin-bottom: 69px;
+    margin-bottom: 85px;
 }
 
 header .container {
@@ -37,18 +40,15 @@ header .container {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    
 
 }
 
 nav ul li {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     color: #2F281E;
-}
-
-nav ul li:first-child {
-    color: #F90;
 }
 
 .buttons {
@@ -60,11 +60,11 @@ nav ul li:first-child {
     color: #fff;
     width: 110px;
     height: 46px;
-    padding: 13px 22px;
+    padding: 13px 17px;
     background-color: #F90;
     border-radius: 4px;
     border: 1px;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: normal;
     font-style: normal;
@@ -75,16 +75,19 @@ nav ul li:first-child {
     background-color: #fff;
     color: #2F281E;
     border: 1px solid #BCD0E5;
-    padding: 13px 25px;
+    padding: 13px 18px;
 
 }
 
 /*----------------------------------------first section-----------------------*/
-section .container {
+.first-section .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 84px;
+    
 }
+
 
 .left_side {
     margin-right: 20px;
@@ -93,27 +96,177 @@ section .container {
     flex-direction: column;
     width: 550px;
     height: 300px;
+    
 }
 
 h1 {
     font-size: 2.75rem;
-    margin-bottom: 32px;
+    margin-bottom: 3px;
+    
 }
 
 .left_side p {
     font-size: 1.125rem;
-    margin-bottom: 20px;
     line-height: 1.75rem;
+        margin-bottom: 5px;
 }
 
 .btn_next {
     width: 180px;
     height: 50px;
-    margin-top: 9px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+
 }
 
 .image {
     margin-left: 20px;
-    /*   width: 644px;
-height: 495px;*/
+    padding-top: 5px;
 }
+/*----------------------Features Section-----------*/
+
+.features-section 
+{
+    padding-bottom: 90px;
+    background: #FFF url('../images/bg.svg') center bottom no-repeat;
+    background-size:cover;
+}
+.features-section .title{
+display: flex;
+justify-content:center;
+margin: 50px;
+}
+
+.features-section h2
+{
+   font-size: 2.25rem;
+    width: 539px;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.features-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+      align-items: center;     
+}
+
+.features-section .container ul{
+display: flex;
+justify-content:space-between;
+gap: 20px;
+width: 1200px;
+margin-top: 0px;
+}
+
+.features-section .container ul li {
+    width: 270px;
+} 
+
+.features-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.features-icon.violet 
+{
+    background-color: #7752BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-icon.yellow 
+{
+    background-color: #FAB005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-icon.red 
+{
+    background-color: #F03E3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-icon.blue 
+{
+    background-color: #4DADF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-size: 1.375rem;
+    margin-bottom: 17px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+  .btn-features {
+align-items: center;
+justify-content: center;
+width: 180px;
+height: 50px;
+
+  }
+/*--------------------------------------FUTER-----------------------------------------*/
+  futer .container {
+    display: flex;
+    justify-content:space-between; 
+    height: 200px;
+    gap: 100px;
+}
+ .logo-futer {
+margin-top: 0;
+    }
+
+  .nav-futer ul{
+display:flex;
+flex-direction: column;
+justify-content:flex-start;
+gap:18px;
+  }
+  .enter-futer 
+  {
+    display:flex;
+flex-direction: column;
+width: 340px;
+justify-content:space-between;
+
+ }
+
+  .items-futer h2
+  {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom:37px;
+  }
+
+  .enter-futer h2 
+  {
+   width: 280px;
+   margin-bottom: 0;
+   font-size: 1 rem;
+   line-height: 1.875rem; 
+  }
+
+  input 
+  {
+    width: 340px;
+    height: 50px;
+  }
+
+  .btn-futer {
+    width: 180px;
+    height: 50px;
+  }
+
+  
