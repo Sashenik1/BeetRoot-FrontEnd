@@ -135,6 +135,8 @@ select:hover,
 /*-------Select-style--------*/
 select {
     position: relative;
+    padding-left: 5px;
+    color: #969696;
     appearance: none;
 }
 
