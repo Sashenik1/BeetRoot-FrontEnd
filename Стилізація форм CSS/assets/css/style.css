@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body
-{
+body {
     font-family: Roboto;
     background: #F7F7F7;
 }
@@ -17,15 +16,16 @@ body
 
 main {
     background: #FFF;
-    margin-top: 100px ;
+    margin-top: 100px;
 }
+
 /*-------------------------Forms------------------------------*/
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-gap: 20px 10px;
-   padding: 35px;
- 
+    gap: 20px 10px;
+    padding: 35px;
+
 }
 
 .head,
@@ -36,30 +36,29 @@ gap: 20px 10px;
 }
 
 
-  .t, select {
+.t,
+select {
     width: 215px;
     height: 38px;
     border-radius: 10px;
-    border-color:#E4E4E4 ;
+    border-color: #E4E4E4;
     border: 1px solid #969696;
 }
 
 /*-------Select-style--------*/
-select
-{
+select {
     position: relative;
-    appearance: none; 
+    appearance: none;
     padding-left: 10px;
     color: #969696;
 }
 
 
-.contry
-{
+.contry {
     position: relative;
 }
-.arrow1
-{
+
+.arrow1 {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -71,8 +70,7 @@ select
     z-index: 1;
 }
 
-.arrow2
-{
+.arrow2 {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -86,68 +84,68 @@ select
 
 /*----------email    button-----------------*/
 
-.t:active, select:active, #email:active 
-{
-border-color: #007BFF;
+.t:active,
+select:active,
+#email:active {
+    border-color: #007BFF;
 }
 
-.t:hover, select:hover, #email:hover
-{
+.t:hover,
+select:hover,
+#email:hover {
     background-color: aquamarine;
 }
 
-#email
-{width: 442px;
+#email {
+    width: 442px;
     height: 38px;
     border-radius: 10px;
-  border: 1px solid  #969696;
+    border: 1px solid #969696;
 }
 
-.email p
-{
+.email p {
     color: #969696;
 }
 
-.button input
-{
+.button input {
     color: white;
     width: 442px;
     background-color: #007BFF;
     height: 38px;
     border-radius: 10px;
     border: 1px solid white;
-} 
-
-.p1
-{
-margin-top: 20px;
-margin-bottom: 20px;
- padding: 0 70px;  
- text-align: center;
- color: #969696;
-} 
-
-span
-{color: #007BFF;;
 }
 
-footer
-{
-padding-top: 20px;
+.p1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    text-align: center;
+    color: #969696;
+}
+
+span {
+    color: #007BFF;
+    ;
+}
+
+footer {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
     border-top: 1px solid #E4E4E4;
 }
-.log_in, a
-{
+
+.log_in,
+a {
     color: #007BFF;
 }
+
 /*--------------Radio-style-----------------*/
 
-.label-r
-{
-   margin-right: 20px;
+.label-r {
+    margin-right: 20px;
 }
 
 .fake-radio {
@@ -160,29 +158,28 @@ padding-top: 20px;
     margin-right: 5px;
 }
 
-.fake-radio input[type="radio"]
-{
-position: absolute;
-left: 0px;
-top: 0px;
-width: 100%;
-height: 100%;
-opacity: 0;
-z-index: 10;
+.fake-radio input[type="radio"] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
 }
 
 .fake-radio::before {
-content: '';
-display: inline-block;
-width: 100%;
-height: 100%;
-position: absolute;
-left: -0px;
-top: 0;
-border: 1px solid grey;
-border-radius: 50%;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -0px;
+    top: 0;
+    border: 1px solid grey;
+    border-radius: 50%;
 
-z-index: 1;
+    z-index: 1;
 }
 
 .fake-radio::after {
@@ -198,41 +195,12 @@ z-index: 1;
     z-index: 2;
     opacity: 0;
     transition: all .2s ease;
-    }
+}
 
-    .fake-radio:has(input:checked)::after 
-    {
-        opacity: 1;
-    }
+.fake-radio:has(input:checked)::after {
+    opacity: 1;
+}
 
-    .fake-radio:has(input:checked)::before 
-    {
-        opacity: 0;
-    }
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fake-radio:has(input:checked)::before {
+    opacity: 0;
+}
