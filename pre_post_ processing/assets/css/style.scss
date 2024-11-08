@@ -1,9 +1,9 @@
 @import "initial";
 
-$color1: hsl(0, 0%, 50%);
-$color2: gold;
-$color3: #666;
-$color4: white;
+$dark-color: #333;
+$gold-color: #FC0;
+$gray-color: #666;
+$white-color: #FFF;
 
 @mixin square {
   width: 100px;
@@ -12,7 +12,7 @@ $color4: white;
 }
 
 main {
-  background: $color4;
+  background: $white-color;
   padding: 121px 185px;
 }
 
@@ -24,7 +24,8 @@ main {
   gap: 50px;
 }
 
-header {
+.heading {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +44,7 @@ header {
       font-size: 1.125rem;
       font-weight: 500;
       line-height: 1.5rem;
-      color: $color1;
+      color: $dark-color;
 
     }
 
@@ -51,7 +52,7 @@ header {
       font-size: 3.75rem;
       font-weight: 900;
       line-height: 4.125rem;
-      color: $color2;
+      color: $gold-color;
 
     }
   }
@@ -62,7 +63,7 @@ header {
     gap: 5px;
 
     .line {
-      border-bottom: 1px solid $color2;
+      border-bottom: 1px solid $gold-color;
       width: 210px;
     }
   }
@@ -81,30 +82,30 @@ section {
       @include square;
       left: -16px;
       top: -16px;
-      border-top: 1px solid $color2;
-      border-left: 1px solid $color2;
+      border-top: 1px solid $gold-color;
+      border-left: 1px solid $gold-color;
     }
 
     .square2 {
       @include square;
-      border-top: 1px solid $color2;
-      border-right: 1px solid $color2;
+      border-top: 1px solid $gold-color;
+      border-right: 1px solid $gold-color;
       right: -16px;
       top: -16px;
     }
 
     .square3 {
       @include square;
-      border-bottom: 1px solid $color2;
-      border-right: 1px solid $color2;
+      border-bottom: 1px solid $gold-color;
+      border-right: 1px solid $gold-color;
       right: -16px;
       bottom: - 12px;
     }
 
     .square4 {
       @include square;
-      border-bottom: 1px solid $color2;
-      border-left: 1px solid $color2;
+      border-bottom: 1px solid $gold-color;
+      border-left: 1px solid $gold-color;
       left: -16px;
       bottom: - 12px;
     }
@@ -113,13 +114,13 @@ section {
 
   .vertical-line {
     height: 560px;
-    border-left: 1px solid $color2;
+    border-left: 1px solid $gold-color;
     margin-left: 16px;
   }
 
   .right {
     display: flex;
-    height: 432px;
+    /*height: 432px;*/
     flex-direction: column;
     align-items: center;
     gap: 35px;
@@ -135,15 +136,25 @@ section {
         font-size: 2.25rem;
         font-weight: 900;
         text-transform: capitalize;
-        color: $color3;
+        color: $gray-color;
+        margin-bottom: 18px;
+        position: relative;
+        &::after
+        {
+          content: '';
+          position: absolute;
+          border-top: 1px solid $gold-color;
+          bottom: -8px;
+          right: 65px;
+        }
       }
 
-      div {
+      /*div {
         border-top: 1px solid $color2;
         width: 100px;
         padding-bottom: 6px;
 
-      }
+      }*/
 
       p {
         font-family: Raleway;
@@ -151,7 +162,7 @@ section {
         font-weight: 400;
         line-height: 2.25rem;
         text-transform: capitalize;
-        color: $color3;
+        color: $gray-color;
         padding-bottom: 5px;
       }
 
@@ -171,15 +182,15 @@ section {
         width: 40px;
         height: 40px;
         padding: 6px;
-        border: 1px solid $color1;
+        border: 1px solid $dark-color;
         border-radius: 50%;
       }
 
       div:hover {
-        border-color: $color2;
+        border-color: $gold-color;
 
         path {
-          fill: $color2;
+          fill: $gold-color;
         }
       }
     }
@@ -197,7 +208,7 @@ section {
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.5rem;
-        color: $color3;
+        color: $gray-color;
       }
 
       ;
@@ -211,12 +222,12 @@ section {
         div {
           width: 10px;
           height: 4px;
-          border-top: 4px solid $color2;
+          border-top: 4px solid $gold-color;
         }
 
         .average {
           width: 20px;
-          border-top: 4px solid $color2;
+          border-top: 4px solid $gold-color;
         }
 
 
@@ -228,19 +239,20 @@ section {
         padding: 12px 20px;
         justify-content: center;
         align-items: center;
-        border: 1px solid $color2;
+        border: 1px solid $gold-color;
         font-family: Raleway;
         font-size: 0.875rem;
         font-weight: 500;
         line-height: 0.875rem;
         text-transform: uppercase;
-        color: $color3;
+        color: $gray-color;
         background-color: white;
+        transition: all 0.5s ease;
       }
 
       button:hover {
-        background-color: $color2;
-        border-color: $color3;
+        background-color: $gold-color;
+        border-color: $gray-color;
       }
     }
 
