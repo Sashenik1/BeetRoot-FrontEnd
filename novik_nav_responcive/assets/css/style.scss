@@ -1,0 +1,341 @@
+:root {
+   --text-color: #070707;
+   --gray-color: #828282;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+@import 'hamburgers.css';
+
+body {
+   font-family: "Open Sans", serif;
+   font-size: 1.125 rem;
+   color: var(--text-color);
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+.container {
+   width: min(90%, 970px);
+   margin-inline: auto;
+}
+
+
+/*-------HEADER---------------*/
+
+.page-shadow {
+   position: fixed;
+   left: 0;
+   top: 0;
+   background-color: rgba(#000000, 0.5);
+   width: 100%;
+   height: 100%;
+   z-index: 999;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s ease;
+
+
+}
+
+.mobile-panel {
+   position: fixed;
+   left: 0px;
+   top: 0;
+   transform: translateX(-350px);
+   background-color: white;
+   width: 350px;
+   height: 100vh;
+   z-index: 1000;
+   transition: all .5s ease;
+
+}
+
+.open-mobile-menu {
+   .page-shadow {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .mobile-panel {
+      transform: translateX(0);
+   }
+}
+
+.mobile-menu {
+   ul {
+      border-top: 1px solid #999;
+
+      li {
+         border-bottom: 1px solid #999;
+
+         a {
+            display: inline-block;
+            padding: 10px 20px;
+            width: 100%;
+            text-decoration: none;
+            color: #666;
+
+            &:hover {
+               background-color: lightgreen;
+            }
+         }
+      }
+   }
+}
+
+.hamburger {
+   position: relative;
+   left: 750px;
+   z-index: 2000;
+}
+
+
+header .container {
+   border-bottom: 1px solid var(--gray-color);
+   padding: 25px 0 24px;
+}
+
+.main-menu ul {
+   text-align: center;
+   font-size: 0;
+}
+
+.main-menu ul li {
+   display: inline;
+   margin: 22px;
+   font-size: 1.125rem;
+}
+
+.main-menu ul li a {
+   color: var(--gray-color);
+   text-decoration: none;
+   line-height: 30px;
+}
+
+.main-menu ul li a:hover {
+   color: var(--text-color);
+   text-shadow: 0 1px 0 #070707;
+}
+
+@media screen and (max-width: 660px) {
+   .main-menu {
+      display: none;
+   }
+
+   .gumburger {
+      display: block;
+   }
+
+}
+
+@media screen and (min-width: 660px) {
+   .hamburger {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 1070px) {
+   .container {
+      width: max(90%, 970px);
+      margin-inline: auto;
+   }
+
+}
+
+
+
+/*--------------First block--------------*/
+.first-block {
+   margin-top: 12px;
+}
+
+h1 {
+   font-size: 3rem;
+   margin-bottom: 45px;
+}
+
+/*--------About me-----*/
+/*.about_me .container {
+     
+ }*/
+
+.about_me {
+   background-color: #F6F6F6;
+}
+
+.about_me .container h2 {
+   font-size: 2.125rem;
+   margin: 100px 0 45px;
+   text-align: center;
+}
+
+.about_me ul {
+   font-size: 0;
+   text-align: center;
+
+}
+
+.about_me ul li {
+   margin-bottom: 32px;
+   font-size: 1.125rem;
+}
+
+.end {
+   padding-left: 4px;
+}
+
+/*-----Skills-------------*/
+
+.skills .container {
+   margin-top: 164px;
+   text-align: center;
+}
+
+.skills .container h2 {
+   font-size: 2.125rem;
+}
+
+.skills .container div {
+   font-size: 1.125rem;
+   line-height: 50px;
+}
+
+.skills_icon {
+   display: flex;
+   width: 940px;
+   height: 306px;
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+   flex-shrink: 0;
+   margin-left: 16px;
+   margin-top: 20px;
+}
+
+.skills_icon li figure {
+   margin-bottom: 50px;
+   width: 170px;
+}
+
+.skills_icon li figure figcaption {
+   font-size: 0.875rem;
+}
+
+.skills_icon li figure img {
+   margin: 40px 0 25px;
+}
+
+.stars {
+   margin-top: 49px;
+   padding-top: 0;
+   color: #181717;
+}
+
+.st1 {
+   color: #828282;
+}
+
+
+/*---------Portfolio-------*/
+
+.portfolio_container {
+   text-align: center;
+   margin-top: 179px;
+   background-color: #F6F6F6;
+}
+
+.portfolio_container h2 {
+   margin-top: 148px;
+   font-size: 2.125rem;
+}
+
+button {
+   width: 100;
+   height: 50;
+}
+
+.port_foto {
+   margin-top: 44px;
+}
+
+.port_foto div {
+   margin-bottom: 68px;
+}
+
+.port_foto p {
+   margin-top: 42px;
+   padding-right: 4px;
+   font-size: 1.125rem;
+}
+
+/*----Contacts-----------*/
+
+.cont_container {
+   text-align: center;
+   margin-top: 200px;
+
+}
+
+.cont_container h2 {
+   font-size: 2.125rem;
+}
+
+.want {
+   font-size: 1.125rem;
+   margin-top: 15px;
+   margin-bottom: 57px;
+}
+
+button {
+   width: 180px;
+   height: 44px;
+   padding: 0px 16px;
+   justify-content: center;
+   align-items: center;
+   border-radius: 22px;
+   background-color: #070707;
+   color: aliceblue;
+   font-size: 1.125rem;
+   font-weight: 400;
+   letter-spacing: 0.1125rem;
+   margin-bottom: 30px;
+   opacity: 1;
+
+}
+
+.bottom_icons {
+   width: 500px;
+   color: aqua;
+   margin: auto;
+   gap: 100px;
+   margin-bottom: 58px;
+
+}
+
+.bottom_icons ul {
+   gap: 50 px;
+}
+
+.bottom_icons li {
+   display: inline-block;
+   margin-left: 25;
+   margin-right: 25;
+}
+
+
+.like {
+   font-size: 0.875rem;
+}
