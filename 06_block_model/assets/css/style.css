@@ -80,7 +80,7 @@ nav ul li {
 }
 
 /*----------------------------------------first section-----------------------*/
-.first-section .container {
+.first-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
