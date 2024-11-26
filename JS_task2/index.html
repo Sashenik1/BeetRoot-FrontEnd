@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-----------------------------------------------Task1-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 1
+      </div>
+      <div class="card-body">
+        <p class="card-text">Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.</p>
+        <button type="button" class="button" onclick="myFuntion1()">Run</button>
+
+        <!--<a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result1"></span>
+      </div>
+    </div>
+    <!-----------------------------------------------Task2-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 2
+      </div>
+      <div class="card-body">
+        <p class="card-text">Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних),
+          добийся математично правильної відповіді.</p>
+        <button type="button" class="button" onclick="myFuntion2()">Run</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result2"></span>
+      </div>
+    </div>
+    <!-----------------------------------------------Task3-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 3
+      </div>
+      <div class="card-body">
+        <p class="card-text">Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки
+          файлів розміром в 820 Мб поміщається на флешку</p>
+        <div class="mb-3">
+          <label for="size" class="form-label">Flash size</label>
+          <input type="number" class="form-control" id="size">
+          <div class="form-text">Enter flash drive size.</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion3()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result3"></span>
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task4-------------------------------------------->
+
+    <div class="card">
+      <div class="card-header">
+        Task 4
+      </div>
+      <div class="card-body">
+        <p class="card-text">Користувач вводить суму грошей в гаманці і ціну однієї шоколадки.
+          Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.</p>
+        <div class="mb-3">
+          <label for="sum" class="form-label">Amount of money</label>
+          <input type="number" class="form-control" id="sum">
+          <div class="form-text form1">Enter amount of money</div>
+          <label for="price" class="form-label">Price of chocolate</label>
+          <input type="number" class="form-control" id="price">
+          <div class="form-text">Enter price of chocolate</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion4()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Amount of chocolate: <span class="result4_1" id="result4_1"></span>
+        Amount that remains: <span id="result4_2"></span>
+
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task5-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 5
+      </div>
+      <div class="card-body">
+        <p class="card-text">Запитай у користувача тризначне число і виведи його задом наперед.
+          Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).</p>
+        <div class="mb-3">
+          <label for="size" class="form-label">Three-digit number</label>
+          <input type="number" class="form-control" id="num">
+          <div class="form-text">Enter number from 100 to 999</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion5()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result5"></span>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
