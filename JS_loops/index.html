@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-----------------------------------------------Task1-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 1
+      </div>
+      <div class="card-body">
+        <p class="card-text">Запитай у користувача його вік і визначи, ким він є: 
+          дитиною (0-11), підлітком (12-17), дорослим (18_59)
+           або пенсіонером (60 ...), передбач можливість введення невірних даних.</p>
+           <div class="mb-3">
+            <label for="age" class="form-label">Age determination</label>
+            <input type="text" class="form-control" id="age">
+            <div class="form-text">Enter your age.</div>
+          </div>
+        <button type="button" class="button" onclick="myFuntion1()">Submit</button>
+
+        <!--<a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result1"></span>
+      </div>
+    </div>
+    <!-----------------------------------------------Task2-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 2
+      </div>
+      <div class="card-body">
+        <p class="card-text">Запитай у користувача число від 0 до 9 і виведи йому
+           спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).</p>
+           <div class="mb-3">
+            <label for="age" class="form-label">Keys</label>
+            <input type="number" class="form-control" id="key">
+            <div class="form-text">Enter number from 0 to 9.</div>
+          </div>
+
+        <button type="button" class="button" onclick="myFuntion2()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result2"></span>
+      </div>
+    </div>
+    <!-----------------------------------------------Task3-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 3
+      </div>
+      <div class="card-body">
+        <p class="card-text">Підрахуй суму всіх чисел в заданому користувачем діапазоні.</p>
+        <div class="mb-3">
+          <label for="sum" class="form-label">Sum of numbers</label>
+          <input type="number" class="form-control" id="num1">
+          <div class="form-text form1">Enter first number of range</div>
+          <input type="number" class="form-control" id="num2">
+          <div class="form-text">Enter second number of range</div>
+        </div>
+        <button type="button" class="button" onclick="myFuntion3()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result3"></span>
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task4-------------------------------------------->
+
+    <div class="card">
+      <div class="card-header">
+        Task 4
+      </div>
+      <div class="card-body">
+        <p class="card-text">Запитай у користувача 2 числа і знайди найбільший
+          спільний дільник.</p>
+        <div class="mb-3">
+          <label for="num4_1" class="form-label"> Greatest common divisor</label>
+          <input type="number" class="form-control" id="num4_1">
+          <div class="form-text form1">Enter first number</div>
+          <input type="number" class="form-control" id="num4_2">
+          <div class="form-text">Enter second number</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion4()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Greatest common divisor: <span id="result4"></span>
+        
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task5-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 5
+      </div>
+      <div class="card-body">
+        <p class="card-text">Запитай у користувача число і виведи всі
+           дільники цього числа.</p>
+        <div class="mb-3">
+          <label for="num" class="form-label">All divisors</label>
+          <input type="number" class="form-control" id="num">
+          <div class="form-text">Enter number</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion5()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result5"></span>
+      </div>
+    </div>
+
+
+ <!-----------------------------------------------Task6-------------------------------------------->
+ <div class="card">
+  <div class="card-header">
+    Task 6
+  </div>
+  <div class="card-body">
+    <p class="card-text">Запитай у користувача п’ятирозрядне число і визначи, 
+      чи є воно паліндромом..</p>
+    <div class="mb-3">
+      <label for="size" class="form-label">Palindrome</label>
+      <input type="number" class="form-control" id="palid">
+      <div class="form-text">Enter number from 10000 to 99999</div>
+    </div>
+
+    <button type="button" class="button" onclick="myFuntion6()">Submit</button>
+
+  </div>
+  <div class="card-footer ">
+    Result: <span id="result6"></span>
+  </div>
+</div>
+
+<!-------------------------------------Task7----------------------------------------->
+<div class="card">
+  <div class="card-header">
+    Task 7
+  </div>
+  <div class="card-body">
+    <p class="card-text">Запитай у користувача суму покупки і виведи суму
+      до оплати зі знижкою:
+      від 200 до 300 - знижка буде 3%; 
+      від 300 до 500 - 5%;
+      від 500 і вище - 7%.</p>
+    <div class="mb-3">
+      <label for="size" class="form-label">Palindrome</label>
+      <input type="number" class="form-control" id="purchase">
+      <div class="form-text">Enter amount for purchase</div>
+    </div>
+
+    <button type="button" class="button" onclick="myFuntion7()">Submit</button>
+
+  </div>
+  <div class="card-footer ">
+    Amount to pay: <span id="result7"></span>
+  </div>
+</div>
+
+
+  
+
+<!-------------------------------------Task8----------------------------------------->
+
+<div class="card">
+  <div class="card-header">
+    Task 8
+  </div>
+  <div class="card-body">
+    <p class="card-text">Запитай у користувача 10 чисел і порахуй, скільки він ввів
+    додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і
+    непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної 
+    (не 10) для введення чисел користувачем.</p>
+    
+    <button type="button" class="button" onclick="myFuntion8()">Enter 10 numbers</button>
+
+  </div>
+  <div class="card-footer ">
+    Amount of positive: <span id="result_poz"></span><br>
+    Amount of negative: <span id="result_neg"></span><br>
+    Amount of zero: <span id="result_zero"></span><br>
+    Amount of pairs: <span id="result_pairs"></span><br>
+    Amount of unpairs: <span id="result_unpairs"></span>
+  </div>
+</div>
+
+<!-------------------------------------Task9----------------------------------------->
+<div class="card">
+  <div class="card-header">
+    Task 9
+  </div>
+  <div class="card-body">
+    <p class="card-text">Зацикли відображення днів тижня таким чином: «День тижня. 
+      Хочеш побачити наступний день? »<br> і так до тих пір, поки користувач
+       натискає OK.</p>
+    
+    
+  </div>
+  <div class="card-footer ">
+    <span>Day of week: </span> <span id="day"></span>
+    <p>Want to see the next day?</p>
+
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="(nextDay())">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Yes
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked onclick="(day())">
+    <label class="form-check-label" for="flexRadioDefault2">
+      No
+    </label>
+  </div>
+
+    
+  </div>
+</div>
+
+
+
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
