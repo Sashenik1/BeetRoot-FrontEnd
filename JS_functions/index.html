@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-----------------------------------------------Task1-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 1
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши всі можливі варіанти створення функцій.</p>
+
+        <button type="button" class="button" onclick="myFuntion1()">Press</button>
+      </div>
+
+      <div class="card-footer ">
+        <div> Variant 1: <span id="variant1"></span> </div>
+        <div>Variant 2: <span id="variant2"></span> </div>
+        <div> Variant 3: <span id="variant3"></span> </div>
+      </div>
+    </div>
+    <!-----------------------------------------------Task2-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 2
+      </div>
+      <div class="card-body">
+        <p class="card-text">Створи функцію, яка буде виводити кількість переданих їй аргументів.</p>
+
+        <button type="button" class="button" onclick="myFuntion2()">Press</button>
+
+      </div>
+      <div class="card-footer ">
+        Amount of arguments: <span id="result2"></span>
+      </div>
+    </div>
+    <!-----------------------------------------------Task3-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 3
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка приймає 2 числа і повертає : <br>
+          -1, якщо перше число менше, ніж друге; <br>
+          1 - якщо перше число більше, ніж друге; <br>
+          0 - якщо числа рівні.</p>
+        <div class="mb-3">
+          <label for="sum" class="form-label">Returne result</label>
+          <input type="number" class="form-control" id="num1">
+          <div class="form-text form1">Enter first number</div>
+          <input type="number" class="form-control" id="num2">
+          <div class="form-text">Enter second number</div>
+        </div>
+        <button type="button" class="button" onclick="myFuntion3()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result3"></span>
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task4-------------------------------------------->
+
+    <div class="card">
+      <div class="card-header">
+        Task 4
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка обчислює факторіал
+          переданого їй числа.</p>
+        <div class="mb-3">
+          <label for="num4" class="form-label"> </label>Factorial
+          <input type="number" class="form-control" id="num4">
+          <div class="form-text form1">Enter number</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion4()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Factorial of number: <span id="result4"></span>
+
+      </div>
+    </div>
+
+    <!-----------------------------------------------Task5-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 5
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка приймає три окремі цифри
+          і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.</p>
+        <div class="mb-3">
+          <label for="num" class="form-label">Transformation</label>
+          <input type="number" class="form-control" id="num">
+          <div class="form-text">Enter number № <span id="position"></span></div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion5()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result5"></span>
+      </div>
+    </div>
+
+
+    <!-----------------------------------------------Task6-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 6
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка приймає довжину і
+          ширину прямокутника і обчислює його площу. Якщо в функцію
+          передали 1 параметр, то вона обчислює площу квадрата.</p>
+        <div class="mb-3">
+          <label for="width" class="form-label">Square of a rectangle</label>
+          <input type="number" class="form-control" id="width">
+          <div class="form-text form1">Enter the width of the rectangle</div>
+          <input type="number" class="form-control" id="length">
+          <div class="form-text">Enter the length of the rectangle</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion6()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result6"></span>
+      </div>
+    </div>
+
+    <!-------------------------------------Task7----------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 7
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка перевіряє, чи є їй
+          передане число досконалим</p>
+        <div class="mb-3">
+          <label for="perfect" class="form-label"></label>
+          <input type="number" class="form-control" id="perfect">
+          <div class="form-text">Enter number</div>
+        </div>
+
+        <button type="button" class="button" onclick="myFuntion7()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result7"></span>
+      </div>
+    </div>
+
+
+
+
+    <!-------------------------------------Task8----------------------------------------->
+
+    <div class="card">
+      <div class="card-header">
+        Task 8
+      </div>
+      <div class="card-body">
+        <p class="card-text">Напиши функцію, яка приймає мінімальне
+          та максимальне значення для діаппазону, і виводить тільки тільки
+          ті числа з діаппазону, які є досконалими. Використовуй написану 
+          раніше функцію, щоб дізнатися, чи є це число досконалим.</p>
+
+        <div class="mb-3">
+          <label for="width" class="form-label">The range of numbers</label>
+          <input type="number" class="form-control" id="num8_1">
+          <div class="form-text form1">Enter the first positive number</div>
+          <input type="number" class="form-control" id="num8_2">
+          <div class="form-text">Enter the second positive number</div>
+        </div>
+        <button type="button" class="button" onclick="myFuntion8()">Submit</button>
+
+      </div>
+      <div class="card-footer ">
+        Result: <span id="result_8"></span>
+
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
