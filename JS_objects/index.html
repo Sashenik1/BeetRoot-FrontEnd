@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-----------------------------------------------Task1-------------------------------------------->
+    <div class="card">
+      <div class="card-header">
+        Task 1
+      </div>
+      <div class="card-body">
+
+        <ol> Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску,
+          середня швидкість, обсяг паливного баку, середня витрата палива на 100 км., водії),
+          і наступні методи для роботи з цим об'єктом:
+          <li> Метод, який виводить на екран інформацію про автомобіль.</li>
+          <li>Додавання ім’я водія у список</li>
+          <li>Перевірка водія на наявність його ім’я у списку</li>
+          <li>Підрахунок необхідного часу та кількості палива для
+            подолання переданої відстані з середньою швидкістю. </li>
+          Враховуй, що через кожні 4 години
+          дороги водієві необхідно робити перерву на 1 годину.
+        </ol>
+
+        <label for="" class="form-label">1. Info about the car
+        </label>
+        <div><button type="button" class="button" onclick="myFuntion1()">Press here
+          </button></div>
+
+        <label for="new_driver" class="form-label">2. Add new driver</label>
+        <input type="text" class="form-control" id="new_driver">
+        <div class="form-text form1">Enter name new driver</div>
+        <div><button type="button" class="button" onclick="myFuntion2()">Submit
+          </button></div>
+
+        <label for="check_driver" class="form-label">3. Driver verification</label>
+        <input type="text" class="form-control" id="check_driver">
+        <div class="form-text">Enter driver’s name for verification</div>
+        <div><button type="button" class="button btn3" onclick="myFuntion3()">Submit
+          </button></div>
+
+        <label for="sum" class="form-label">4. Time and fuel calculation</label>
+        <input type="number" class="form-control" id="distance">
+        <div class="form-text">Enter distance</div>
+        <div><button type="button" class="button btn3" onclick="myFuntion4()">Submit
+          </button></div>
+
+      </div>
+
+      <div class="card-footer ">
+        <div> All results: </div>
+        <div> List of car data: <span id="info"></span> </div>
+        <div> Name added to new driver: <span id="added-driv"></span> </div>
+        <div> Driver verification: <span id="check"></span> </div>
+        <div> Time and fuel calculation: <span id="rez-calc"></span> </div>
+      </div>
+    </div>
+    <!-----------------------------------------------Task2-------------------------------------------->
+
+    <div class="card">
+      <div class="card-header">
+        Task 2
+      </div>
+      <div class="card-body">
+        <ol>Створити об'єкт, що описує час (години, хвилини, секунди),
+          і такі функції для роботи з цим об'єктом:
+          <li>Для виведення часу на екран.</li>
+          <li>Зміни часу на передану кількість секунд.</li>
+          <li>Зміни часу на передану кількість хвилин.</li>
+          <li>Зміни часу на передану кількість годин.</li>
+          <li>Враховуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися
+            і інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд, то повинно вийти
+            «21:00:15», а не «20:59:75». Також потрібно передбачити можливість того що
+            користувач може передати 150 секунд,або 75 хвилин.</li>
+        </ol>
+
+
+        <label for="" class="form-label">Display time on screen
+        </label>
+        <div><button type="button" class="button" onclick="myFuntion5()">Press here
+          </button></div>
+
+        <label for="new_driver" class="form-label">Change time</label>
+        <input type="number" class="form-control" id="hours">
+        <div class="form-text form1">Add hours</div>
+        <input type="number" class="form-control" id="minutes">
+        <div class="form-text form2">Add minutes</div>
+        <input type="number" class="form-control" id="seconds">
+        <div class="form-text form3">Add seconds</div>
+        <div><button type="button" class="button" onclick="myFuntion6()">Submit
+          </button></div>
+
+
+
+
+      </div>
+      <div class="card-footer ">
+        Time: <span id="time"></span>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
