@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container pt-4 pb-4">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <input type="text" class="form-control" id="prodTitle" placeholder="Title">
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control" id="prodPrice" placeholder="Price">
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control" id="prodQty" placeholder="Quantity" value="1">
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-primary" onclick="checkAndAddToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-header">
+        <h4>Products in cart</h4>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Qty.</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="product_list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    
+  </div>
+
+  
+
+
+
+   
+
+
+
+
+
+
+  
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
