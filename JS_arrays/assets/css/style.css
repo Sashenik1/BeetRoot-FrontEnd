@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .card {
@@ -43,4 +43,35 @@
 
 li {
   margin-left: 50px;
+}
+
+.my-toast {
+  max-width: 400px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.my-toast.my-toast-success {
+  background-color: lightgreen;
+  border-color: green;
+}
+
+.my-toast.my-toast-error {
+  background-color: lightcoral;
+  border-color: tomato;
+}
+
+.my-toast.my-toast-warning {
+  background-color: yellow;
+  border-color: yellowgreen;
+}
+
+.my-toast.my-toast-info {
+  background-color: lightblue;
+  border-color: blue;
 }

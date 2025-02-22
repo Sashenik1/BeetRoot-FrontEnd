@@ -39,33 +39,57 @@ function checkAndAddToCart() {
     const qty = document.getElementById('prodQty').valueAsNumber
 
     if (title === '') {
+<<<<<<< HEAD
         alert('Enter product title, please')
+=======
+        toast.error('Enter product title, please')
+>>>>>>> a0ed8a7a72688467e14f9b14f31371115c56ae0d
         return
     }
 
     if (isNaN(price)) {
+<<<<<<< HEAD
         alert('Enter product price, please')
         return
     } else {
         if (price <= 0) {
             alert('Invalid price')
+=======
+        toast.error('Enter product price, please')
+        return
+    } else {
+        if (price <= 0) {
+            toast.error('Invalid price')
+>>>>>>> a0ed8a7a72688467e14f9b14f31371115c56ae0d
             return
         }
     }
 
     if (isNaN(qty)) {
+<<<<<<< HEAD
         alert('Enter product quantity, please')
         return
     } else {
         if (qty <= 0) {
             alert('Invalid quantity')
+=======
+        toast.error('Enter product quantity, please')
+        return
+    } else {
+        if (qty <= 0) {
+            toast.error('Invalid quantity')
+>>>>>>> a0ed8a7a72688467e14f9b14f31371115c56ae0d
             return
         }
     }
 
     //const action = addToCart(title, price, qty)
     const msg = addToCart(title, price, qty) === 'added' ? 'Product added successfully' : 'Product updated successfully'
+<<<<<<< HEAD
     alert(msg)
+=======
+    toast.success(msg)
+>>>>>>> a0ed8a7a72688467e14f9b14f31371115c56ae0d
 
 
     document.getElementById('prodTitle').value = ''

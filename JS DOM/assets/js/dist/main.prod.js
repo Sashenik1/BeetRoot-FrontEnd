@@ -1,0 +1,1 @@
+"use strict";var items=["Элемент 1","Элемент 2","Элемент 3","Элемент 4"];function addNumberedList(e,t){var n=document.getElementById(e),d=document.createElement("ol");t.forEach(function(e){var t=document.createElement("li");t.textContent=e,d.appendChild(t)}),n.appendChild(d)}addNumberedList("listContainer",items);
