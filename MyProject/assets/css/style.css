@@ -34,7 +34,11 @@ img {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.025rem;
-  color: white;
+  color: #FFF;
+}
+.btn:hover {
+  background: #253D32;
+  transition: all 2s ease;
 }
 
 .sect1 {
@@ -42,7 +46,7 @@ img {
   justify-content: center;
   align-items: start;
   background: url("../images/hero.png") #3d5a38 0px 0px/100% 103.367% no-repeat;
-  padding: 30px 20px 0 40px;
+  padding: 17px 20px 0 40px;
   width: 1440px;
   height: 852px;
 }
@@ -61,8 +65,8 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  margin-bottom: 30px;
-  margin-top: 9px;
+  margin-bottom: 54px;
+  margin-top: 0px;
 }
 .sect1 .group-sect1 .top-panel .logo {
   display: flex;
@@ -73,7 +77,6 @@ img {
 }
 .sect1 .group-sect1 .top-panel .logo p {
   color: #FFF;
-  font-family: Rubik;
   font-size: 1.625rem;
   font-weight: 600;
   letter-spacing: 0.0325rem;
@@ -89,6 +92,9 @@ img {
   font-size: 1rem;
   font-weight: 400;
 }
+.sect1 .group-sect1 .top-panel ul li a:hover {
+  color: #A3B938;
+}
 .sect1 .group-sect1 .top-panel button {
   border-radius: 116px;
   padding: 10px;
@@ -100,13 +106,18 @@ img {
   margin-left: -18px;
   margin-bottom: 18px;
 }
+.sect1 .group-sect1 .top-panel button:hover {
+  background: #A3B938;
+  transition: all 0.4s ease-in-out;
+}
 .sect1 .group-sect1 hgroup {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 42px;
+  gap: 15px;
   margin-bottom: -8px;
+  margin-right: 146px;
 }
 .sect1 .group-sect1 hgroup h2 {
   font-size: 2.25rem;
@@ -115,6 +126,7 @@ img {
   line-height: normal;
   letter-spacing: 0.045rem;
   margin-right: 17px;
+  color: #FFF;
 }
 .sect1 .group-sect1 hgroup h1 {
   font-size: 5.625rem;
@@ -177,8 +189,15 @@ img {
   text-decoration-style: solid;
   text-underline-position: from-font;
 }
+.servises .first .block1 a p:hover {
+  color: #253D32;
+  transition: all 0.4s ease;
+}
 .servises .first .block1 a .svg-arrow {
   margin-top: 14px;
+}
+.servises .first .block1 a .svg-arrow:hover {
+  fill: #253D32;
 }
 .servises .first .block2 svg,
 .servises .first .block3 svg {
@@ -206,7 +225,7 @@ img {
 .servises .second {
   display: flex;
   gap: 150px;
-  margin-bottom: 250px;
+  margin-bottom: 261px;
 }
 .servises .second .left {
   background: url("../images/Group 1.png") #3d5a38 0px 0px/100% 103.367% no-repeat;
@@ -282,7 +301,7 @@ img {
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 146px;
 }
 .process h2 {
   color: #253D32;
@@ -305,7 +324,7 @@ img {
   display: flex;
   gap: 15px;
   margin-right: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 }
 .process .line .punct {
   margin-top: 22px;
@@ -332,6 +351,10 @@ img {
   text-decoration-style: solid;
   text-underline-position: from-font;
 }
+.process a p:hover {
+  color: #253D32;
+  transition: all 0.4s ease;
+}
 .process a .svg-arrow {
   margin-top: 14px;
 }
@@ -339,7 +362,8 @@ img {
 hgroup {
   display: flex;
   gap: 100px;
-  margin-left: 185px;
+  margin-left: 142px;
+  margin-bottom: 37px;
 }
 hgroup h2 {
   color: #253D32;
@@ -349,12 +373,14 @@ hgroup h2 {
   line-height: 4.0625rem;
   letter-spacing: 0.0525rem;
   margin-bottom: 20px;
+  margin-right: 155px;
 }
 hgroup h4 {
   color: #253D32;
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
   padding-top: 82px;
+  font-weight: 400;
 }
 
 h4:last-child {
@@ -363,10 +389,24 @@ h4:last-child {
 
 .rectangles {
   display: flex;
-  gap: 20px;
-  margin-left: 188px;
+  gap: 45px;
+  margin-left: 140px;
+  margin-bottom: 231px;
 }
-.rectangles img {
+.rectangles .rec {
+  margin-bottom: 10px;
+}
+.rectangles .rec img {
+  margin-bottom: 20px;
+}
+.rectangles .date {
+  color: #808371;
+  font-family: Rubik;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0175rem;
   margin-bottom: 20px;
 }
 .rectangles h4 {
@@ -380,6 +420,11 @@ h4:last-child {
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 2.5rem;
+  color: #78847D;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
 }
 
 footer {
@@ -392,7 +437,7 @@ footer {
   width: 1170px;
   height: 523px;
   margin-bottom: 100px;
-  margin-left: 13%;
+  margin-left: 137px;
   position: relative;
   display: flex;
 }
@@ -451,8 +496,8 @@ footer {
 .foot-text {
   display: flex;
   gap: 250px;
-  margin-left: 191px;
-  margin-bottom: 100px;
+  margin-left: 142px;
+  margin-bottom: 50px;
 }
 .foot-text svg {
   margin-right: 10px;
@@ -504,6 +549,9 @@ footer {
   color: #78847D;
   text-decoration: none;
   font-size: 0, 8rem;
+}
+.foot-text li a:hover {
+  color: #253D32;
 }
 .foot-text li:first-child {
   margin-bottom: 32px;
