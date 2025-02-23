@@ -1,3 +1,4 @@
+@import 'hamburgers.css';
 * {
   padding: 0;
   margin: 0;
@@ -41,7 +42,80 @@ img {
   transition: all 2s ease;
 }
 
-.sect1 {
+/*-------------------------------responsive-menu----------------------------------------------*/
+.page-shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(120, 132, 125, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.mobile-panel {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  transform: translateX(-350px);
+  background-color: #FFF;
+  width: 350px;
+  height: 100vh;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+.open-mobile-menu .page-shadow {
+  opacity: 1;
+  visibility: visible;
+}
+.open-mobile-menu .mobile-panel {
+  transform: translateX(0);
+  transform: translateY(100px);
+}
+
+.mobile-menu ul {
+  border-top: 1px solid #4B5D68;
+}
+.mobile-menu ul li {
+  border-bottom: 1px solid #4B5D68;
+}
+.mobile-menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  color: #4B5D68;
+}
+.mobile-menu ul li a:hover {
+  background-color: #4B5D68;
+}
+
+.hamburger {
+  position: relative;
+  left: 400px;
+  z-index: 2000;
+}
+
+@media screen and (max-width: 660px) {
+  .main-menu {
+    display: none;
+  }
+
+  .gumburger {
+    display: block;
+  }
+}
+@media screen and (min-width: 660px) {
+  .hamburger {
+    display: none;
+  }
+}
+/*-----------------------------------------------------------------------------*/
+.sect1 .container {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -50,7 +124,7 @@ img {
   width: 1440px;
   height: 852px;
 }
-.sect1 .group-sect1 {
+.sect1 .container .group-sect1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +134,7 @@ img {
   width: 90%;
   margin-top: 23px;
 }
-.sect1 .group-sect1 .top-panel {
+.sect1 .container .group-sect1 .top-panel {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,34 +142,34 @@ img {
   margin-bottom: 54px;
   margin-top: 0px;
 }
-.sect1 .group-sect1 .top-panel .logo {
+.sect1 .container .group-sect1 .top-panel .logo {
   display: flex;
   gap: 10px;
 }
-.sect1 .group-sect1 .top-panel .logo .logo-svg {
+.sect1 .container .group-sect1 .top-panel .logo .logo-svg {
   margin-top: 9px;
 }
-.sect1 .group-sect1 .top-panel .logo p {
+.sect1 .container .group-sect1 .top-panel .logo p {
   color: #FFF;
   font-size: 1.625rem;
   font-weight: 600;
   letter-spacing: 0.0325rem;
 }
-.sect1 .group-sect1 .top-panel ul {
+.sect1 .container .group-sect1 .top-panel ul {
   display: flex;
   gap: 50px;
   margin-bottom: 25px;
 }
-.sect1 .group-sect1 .top-panel ul li a {
+.sect1 .container .group-sect1 .top-panel ul li a {
   text-decoration: none;
   color: #FFF;
   font-size: 1rem;
   font-weight: 400;
 }
-.sect1 .group-sect1 .top-panel ul li a:hover {
+.sect1 .container .group-sect1 .top-panel ul li a:hover {
   color: #A3B938;
 }
-.sect1 .group-sect1 .top-panel button {
+.sect1 .container .group-sect1 .top-panel button {
   border-radius: 116px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -106,11 +180,11 @@ img {
   margin-left: -18px;
   margin-bottom: 18px;
 }
-.sect1 .group-sect1 .top-panel button:hover {
+.sect1 .container .group-sect1 .top-panel button:hover {
   background: #A3B938;
   transition: all 0.4s ease-in-out;
 }
-.sect1 .group-sect1 hgroup {
+.sect1 .container .group-sect1 hgroup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,7 +193,7 @@ img {
   margin-bottom: -8px;
   margin-right: 146px;
 }
-.sect1 .group-sect1 hgroup h2 {
+.sect1 .container .group-sect1 hgroup h2 {
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 500;
@@ -128,7 +202,7 @@ img {
   margin-right: 17px;
   color: #FFF;
 }
-.sect1 .group-sect1 hgroup h1 {
+.sect1 .container .group-sect1 hgroup h1 {
   font-size: 5.625rem;
   font-style: normal;
   font-weight: 600;
@@ -136,7 +210,7 @@ img {
   letter-spacing: 0.225rem;
   margin-right: 10px;
 }
-.sect1 .group-sect1 p {
+.sect1 .container .group-sect1 p {
   text-align: center;
   font-size: 1.375rem;
   margin-bottom: 30px;
@@ -568,4 +642,5 @@ footer {
   color: #78847D;
   text-decoration: none;
   font-size: 0, 8rem;
+  gap: 10px;
 }

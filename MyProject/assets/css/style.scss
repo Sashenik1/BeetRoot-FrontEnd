@@ -10,7 +10,7 @@ $dark-blue-color: #14183E;
     box-sizing: border-box;
 }
 
-//@import 'hamburgers.css';
+@import 'hamburgers.css';
 
 @mixin p {
     color: $gray-color;
@@ -59,7 +59,7 @@ body {
 .container {
     width: min(90%, 1440px);
     margin-inline: auto;
-   
+ // border: solid 2px blue;
 }
 
 ul,
@@ -93,7 +93,101 @@ img {
 
 //------------------------section1-----------------
 
+/*-------------------------------responsive-menu----------------------------------------------*/
+
+.page-shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba($gray-color, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+
+
+}
+
+.mobile-panel {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    transform: translateX(-350px);
+    background-color: $white-color;
+    width: 350px;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .5s ease;
+
+}
+
+.open-mobile-menu {
+    .page-shadow {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .mobile-panel {
+        transform: translateX(0);
+        transform: translateY(100px);
+    }
+}
+
+.mobile-menu {
+    ul {
+        border-top: 1px solid #4B5D68;
+
+        li {
+            border-bottom: 1px solid #4B5D68;
+
+            a {
+                display: inline-block;
+                padding: 10px 20px;
+                width: 100%;
+                text-decoration: none;
+                color: #4B5D68;
+
+                &:hover {
+                    background-color: #4B5D68;
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    position: relative;
+    left: 400px;
+    z-index: 2000;
+}
+
+@media screen and (max-width: 660px) {
+    .main-menu {
+        display: none;
+    }
+
+    .gumburger {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 660px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+
 .sect1 {
+    
+    .container{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -101,6 +195,7 @@ img {
     padding: 17px 20px 0 40px;
     width: 1440px;
     height: 852px;
+    
 
     .group-sect1 {
         display: flex;
@@ -120,8 +215,10 @@ img {
             width: 95%;
             margin-bottom: 54px;
             margin-top: 0px;
-            //  border: 1px solid white;
+             //border: 1px solid white;
 
+
+             
             .logo {
                 display: flex;
                 gap: 10px;
@@ -184,7 +281,7 @@ img {
             margin-bottom: -8px;
             margin-right: 146px;
 
-            // border: 1px solid white;
+            
             h2 {
                 font-size: 2.25rem;
                 font-style: normal;
@@ -212,6 +309,7 @@ img {
             line-height: 2.5rem;
         }
     }
+}
 }
 
 //----------------links------------------------
@@ -675,4 +773,5 @@ footer {
     color: $gray-color;
     text-decoration: none;
     font-size: 0, 8rem;
+    gap: 10px;
 }

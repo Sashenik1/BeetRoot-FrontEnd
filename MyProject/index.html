@@ -13,9 +13,31 @@
 <body>
 
     <!--------------------------section1--------------------------------->
-    <section>
-        <div class="container sect1">
+    
+    <!-------------------------responsive-menu----------------------------->
+    <div class="page-shadow ">
+
+    </div>
+    <div class="mobile-panel ">
+        <nav class="mobile-menu">
+            <ul>
+                   <li><a href="#">Features</a></li>
+                   <li><a href="#">Pricing</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <!-- ----------------------------------------------------------     -->
+    
+    
+    <section class="sect1">
+        
+            <div class="container">
             <div class="group-sect1">
+                
                 <div class="top-panel">
                     <div class="logo">
 
@@ -26,7 +48,7 @@
                         <p>markethink</p>
                     </div>
 
-                    <nav>
+                    <nav class="main-menu">
                         <ul>
                             <li><a href="#">Features</a></li>
                             <li><a href="#">Pricing</a></li>
@@ -34,6 +56,14 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
+
+                    <button class="hamburger hamburger--spin " type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+
+
                     <button type="button">Free Trial</button>
                 </div>
                 <hgroup>
@@ -51,10 +81,12 @@
                 <button class="btn">Get Started</button>
             </div>
         </div>
+       
 
     </section>
     <!------------------------links-------------------------------------------->
-    <div class="container links">
+    <div class="links">
+        <div class="container">
         <nav>
             <ul>
                 <li><a href="https://slack.com/" target="_blank" rel="nofollow, noreferrer">
@@ -95,7 +127,7 @@
             </ul>
         </nav>
     </div>
-
+</div>
 
     <!-------------------------servises-------------------------->
 
@@ -438,7 +470,11 @@
 
 
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    </div>
+    <script src="assets/js/main.js">
+        
+    </script>
 </body>
 
 </html>

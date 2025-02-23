@@ -10,3 +10,9 @@ function updateDate() {
 }
 updateDate();
 
+
+
+function toggleMenu() {
+    document.body.classList.toggle('open-mobile-menu');
+    document.querySelector(".hamburger").classList.toggle('is-active');
+}
